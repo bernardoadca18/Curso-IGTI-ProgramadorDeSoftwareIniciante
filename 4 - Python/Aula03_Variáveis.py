@@ -1,0 +1,12 @@
+x = 5;
+print(x);
+y = "Python";
+print(y);
+z = 'Python';
+print(z);
+z = 'Java';
+print(z);
+a = "Letra Minúscula";
+A = "Letra Maiuscula";
+print(a);
+print(A);

@@ -1,0 +1,17 @@
+print(5+5);
+a = 5;
+print(a);
+b = 10;
+print(a + b);
+print(a * b);
+y = "a";
+print(y);
+soma = a + b;
+print(soma);
+z = 10 + 50;
+print(z);
+print(10 +++++ 50);
+print(10 ** 2);
+x = "b " + "c";
+print(x);
+print(x + " " + y);
