@@ -1,0 +1,51 @@
+div.BLUE > div
+{
+    color:blue;
+    background-color: aliceblue;
+}
+
+.RED > p
+{
+    color: red;
+}
+
+*
+{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#t1
+{
+    font-size: 45px;
+    color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#t2
+{
+    font-size: 32px;
+    color: rgb(226, 214, 43);
+}
+
+body
+{
+    background-color: indigo;
+}
+
+body .BLUE:not(h1)
+{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: darkgrey;
+}
+
+div > div > div
+{
+    color:rgb(226, 214, 43);
+}
+
+h5
+{
+    color: white;
+    background-color: darkcyan;
+}
