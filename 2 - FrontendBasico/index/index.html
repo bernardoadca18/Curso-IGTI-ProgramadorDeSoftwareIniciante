@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>
+            Título da Página
+        </title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="index.css">
+        <script>
+            //alert("Hello World");
+            console.log("Hello World");
+        </script>
+    </head>
+
+    <body>
+        <script src ="index.js">
+
+        </script>
+        <img width= 100 src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png">
+
+        <h1 class="texto-header">Heading 1</h1>
+        <h2 id = "texto2">Heading 2</h2>
+        <h3 class="paragrafo">Heading 3</h3>
+        <h4 class="paragrafo">Heading 4</h4>
+        <h5 class="paragrafo">Heading 5</h5>
+        <h6 class="paragrafo">Heading 6</h6>
+
+        <script>
+            setTimeout
+            (
+                function() 
+                {
+                    console.log("1 second has passed");
+                },
+            1000);
+            setTimeout
+            (
+                function() 
+                {
+                    console.log("2 second has passed");
+                    //document.write("texto qualquer");
+                },
+            2000);
+        </script>
+        
+        <p  class="paragrafo">
+            Parágrafo1
+        </p>
+        <br>
+        <br>
+        <p id="paragrafo2" class="paragrafo">
+            Parágrafo2
+        </p>
+
+        <a href="http://www.youtube.com/">
+        Youtube
+        </a>
+        <br>
+        <input class="inputMargin" type= "text">
+        <br>
+        <input class="inputMargin" type= "number">
+        <br>
+        <input class="inputMargin" type= "password">
+        <br>
+
+        <input type= "checkbox" id="carro1">
+        <label for="carro1">
+            Uno
+        </label>
+        <br>
+
+        <input type= "checkbox" id="carro2">
+        <label for="carro2">
+            Gol
+        </label>
+        <br>
+
+        <input type= "radio" id="masculino" value="masculino" name="genero">
+        <label for="masculino" style="color: blue">
+            Masculino
+        </label>
+        <br>
+        <input type="radio" id="feminino" value="feminino" name="genero">
+        <label for="feminino" style="color: pink">
+            Feminino
+        </label>
+        <br>
+        <input type="radio" id="hondaCivic2006" value="hondaCivic2006" name="genero">
+        <label for="hondaCivic2006" style="color: black">
+            Honda Civic 2006 gasolina aditivada
+        </label>
+        <br>
+
+        <select>
+            <option value="Uno">Uno</option>
+            <option value="Gol">Gol</option>
+            <option value="Palio" selected>Palio</option>
+            <option value="Sandero">Sandero</option>
+        </select>
+        <br>
+        <br>
+        <select multiple>
+            <option value="Uno">Uno</option>
+            <option value="Gol">Gol</option>
+            <option value="Palio" selected>Palio</option>
+            <option value="Sandero">Sandero</option>
+        </select>
+        <br>
+        <br>
+        <textarea rows="5" cols="20">Texto Inicialal</textarea>
+
+        <button type="button" onclick="clickBotao()">
+            Clique Aqui!
+        </button>
+
+        <button type="button" onclick="clickBotao2()">
+            Clique Aqui 2!
+        </button>
+
+        <br>
+        
+        <br>
+        <br>
+        <button type = "button" onclick="adicionarElemento()">
+            Adicionar Elemento
+        </button>
+
+        <button type = "button" onclick="removerElementos()">
+            Remover Elementos
+        </button>
+        
+        <br>
+        
+        <div id = "div-elementos">
+
+        </div>
+
+        <script>
+            console.log("Hello World no body");
+        </script>
+    </body>
+</html>

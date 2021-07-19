@@ -1,0 +1,51 @@
+.body
+{
+    text-align: center;
+    background-color: rgb(183, 221, 255);
+}
+
+.div-inputs
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.label
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input
+{
+    font-size: 20px;
+    border-radius: 12px;
+    border: solid 2px rgb(6, 0, 39);
+}
+
+.btn-calcular
+{
+    font-size: 20px;
+    background: rgb(6, 0, 39);
+    width: 20%;
+    height: 60px;
+    color: aliceblue;
+    border-radius: 12px;
+}
+
+.btn-limpar
+{
+    font-size: 20px;
+    background: aliceblue;
+    width: 20%;
+    height: 60px;
+    color: rgb(6, 0, 39);
+    border-radius: 12px;
+}
+
+.resultado
+{
+    font-size: 42px;
+    text-align: center;
+    color: rgb(6, 0, 39);
+}

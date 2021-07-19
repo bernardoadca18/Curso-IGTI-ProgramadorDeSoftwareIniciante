@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página 2</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p id="parágrafo1">Isso é um parágrafo</p>
+
+        <input id="input-cor" type="text">
+
+        <button 
+            type="button" onclick="document.getElementById('parágrafo1').style.visibility='hidden'">
+            Esconder Parágrafo
+        </button>
+        <button 
+            type="button" onclick="document.getElementById('parágrafo1').style.visibility='visible'">
+            Mostrar Parágrafo
+        </button>
+
+        <button type="button" onclick="trocarCorParaVerde('green')">
+            Trocar Cor para verde
+        </button>
+
+        <button type="button" onclick="trocarCor()">
+            Trocar Cor
+        </button>
+
+        <script>
+            var p = document.getElementById('parágrafo1');
+            p.style.color = "blue";
+            p.style.fontWeight = "bold";
+            p.style.fontSize = "45px";
+
+            function trocarCorParaVerde()
+            {
+                document.getElementById('parágrafo1').style.color = "green";
+            }
+
+            function trocarCor()
+            {
+                var cor = document.getElementById("input-cor").value;
+                document.getElementById('parágrafo1').style.color = cor;
+            }
+        </script>
+    </body>
+</html>

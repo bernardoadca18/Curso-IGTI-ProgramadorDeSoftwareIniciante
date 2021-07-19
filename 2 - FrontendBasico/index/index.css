@@ -1,0 +1,48 @@
+.texto-header 
+{
+    color: red; 
+    background-color: blue;
+}
+
+#texto2
+{
+    color: red;
+}
+
+.borda
+{
+    border: solid 22px;
+    color: #ff8181;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.inputMargin
+{
+    /*
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    */
+    margin: 4px 0px 4px 8px;
+}
+
+.whatsapp
+{
+    color: green;
+}
+
+.whatsapp2
+{
+    color:red;
+}
+
+.imageMargin
+{
+    margin-left: 540px;;
+}
+
+.paragrafo
+{
+    margin-left: 40px;
+}
