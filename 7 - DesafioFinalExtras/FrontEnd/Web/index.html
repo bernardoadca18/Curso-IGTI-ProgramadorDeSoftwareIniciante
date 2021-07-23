@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-BR">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Final</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Desafio Final - WEB</h1>
+        <div class="body">
+            <div id="errors"></div>
+            <div id="optionsDiv" class="optionsDiv">
+                <h3>Opções</h3>
+                <label>
+                    Ordernar por:
+                    <select name="sort" id="sort" onchange="updateSort()">
+                        <option value="id" selected>ID</option>
+                        <option value="nameAscending">Nome(Crescente)</option>
+                        <option value="nameDescending">Nome(Decrescente)</option>
+                        <option value="bruteSalaryAscending">Salário Bruto(Crescente)</option>
+                        <option value="bruteSalaryDescending">Salário Bruto(Decrescente)</option>
+                        <option value="liquidSalaryAscending">Salário Líquido(Crescente)</option>
+                        <option value="liquidSalaryDescending">Salário Líquido(Decrescente)</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <label id="filter">
+                    Filtrar por Cargos:
+                    <br>
+                </label>
+            </div>
+            <div>
+                <h3 id="employeesTitle">Funcionários</h3>
+                <div id="employeesDiv" class="employeesDiv">
+                    <table id="employeesTable" class="content-table">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Nome</td>
+                                <td>Cargo</td>
+                                <td>Salário Bruto</td>
+                                <td>Desconto INSS</td>
+                                <td>Desconto IRRF</td>
+                                <td>Salário Líquido</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tBody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="managementDiv" class="managementDiv">
+                <form>
+                    <h3>Gerenciar Funcionários</h3>
+                    <label>Nome: <br><input name="name"></label><br>
+                    <label>Salário Bruto: <br><input name="salary" type="number" step="0.01"></label><br>
+                    <label>Cargo: <br><select name="role_id"></select></label><br><br>
+                    <div class="buttonsDiv">
+                        <button type="button" id="bDelete">Deletar</button>
+                        <button type="button" id="bCancel">Cancelar</button>
+                        <button type="button" id="bSubmit">Atualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="salaryFunctions.js"></script>
+        <script src="http.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
