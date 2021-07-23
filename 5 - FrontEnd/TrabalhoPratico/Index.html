@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-BR">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Calculadora de Financiamento</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+
+    <body>
+        <div class="titulo">
+            <h1>Calculadora de Financiamento</h1>
+        </div>
+
+        <div class="entradas">
+            <h3 class="subtitulo">Simulação de Financiamento</h3>
+            <label>
+                Valor:
+                <input type="number" name="valor" id="valor" value="200000">
+            </label>
+            <label>
+                Prazo(Anos):
+                <input type="number" name="prazoAnos" id="prazoAnos" value="20">
+            </label>
+            <label>
+                Juros ao ano:
+                <input type="number" name="jurosAoAno" id="jurosAoAno" value="0.08">
+            </label>
+        </div>
+
+        <button class="botao" id="button" onclick="criarElementos()">
+            Simular
+        </button>
+
+        <div class="resultados" id="divResultados">
+            <h3 class="subtitulo">Resultados</h3>
+            <label id="prazoMeses">
+                Prazo (Meses): <input type="text" readonly>
+            </label>
+
+            <label id="jurosAoMes">
+                Juros ao mês: <input type="text" readonly>
+            </label>
+
+            <label id="jurosAcumulados">
+                Juros Acumulados: <input type="text" readonly>
+            </label>
+        </div>
+
+        <div class="prestacoes" id="divPrestacoes">
+            <table id="tabela">
+                <tr>
+                    <td>Prestação</td>
+                    <td>Amortizante</td>
+                    <td>Juros</td>
+                    <td>Total</td>
+                </tr>
+                <tr id="row1">
+                    <td id="c11">-</td>
+                    <td id="c12">-</td>
+                    <td id="c13">-</td>
+                    <td id="c14">-</td>
+                </tr>
+                <tr id="row1">
+                    <td id="c21">-</td>
+                    <td id="c22">-</td>
+                    <td id="c23">-</td>
+                    <td id="c24">-</td>
+                </tr>
+                <tr id="row1">
+                    <td id="c31">-</td>
+                    <td id="c32">-</td>
+                    <td id="c33">-</td>
+                    <td id="c34">-</td>
+                </tr>
+                <tr id="row1">
+                    <td id="c41">-</td>
+                    <td id="c42">-</td>
+                    <td id="c43">-</td>
+                    <td id="c44">-</td>
+                </tr>
+                <tr id="row5">
+                    <td id="c51">-</td>
+                    <td id="c52">-</td>
+                    <td id="c53">-</td>
+                    <td id="c54">-</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <script src="Script.js"></script>
+    </body>
+</html>

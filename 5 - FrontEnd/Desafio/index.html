@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-BR">
+        <meta charset="utf-8">
+        <title>Desafio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Desafio</h1>
+        <div id="Errors"></div>
+        
+        <div id="options">
+            <h3>Options</h3>
+            <label class="second">
+                Sort by
+                <select name="sort" id="sort">
+                    <option value="nameA" selected>Name (Ascending)</option>
+                    <option value="nameD">Name (Descending)</option>
+                    <option value="salaryA">Salary (Ascending)</option>
+                    <option value="salaryD">Salary (Descending)</option>
+                </select>
+            </label>
+            
+            <label class="roles">
+                Filter by Roles
+                <div id="filter" ></div>
+            </label>
+        </div>
+
+        <div id="employees">
+            <h3 id="employeesTitle"></h3>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Name</td>
+                        <td>Salary</td>
+                        <td>Role</td>
+                    </tr>
+                </thead>
+                <tbody id="tabelaBody"></tbody>
+            </table>
+        </div>
+
+        <script src="https.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
